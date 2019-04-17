@@ -1,0 +1,299 @@
+body {
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px; 
+    display: flex; 
+    position: relative;
+}
+
+header div {
+    width: 50%;
+    height: 100%;  
+    position: absolute;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-left p {
+    font-size: 400%;
+    margin: 0 auto;
+}
+
+.header-right {
+    left: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right button {
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.btn-greeting a, .btn-hobby a, .btn-dream a, .btn-message a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-greeting a:hover, .btn-hobby a:hover, .btn-dream a:hover, .btn-message a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+/* main begins */
+
+.main1 {
+    background-image: url("mountain2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1 div {
+    width: 90vw;
+    height: 300px;
+}
+
+.greeting {
+    font-size: 100px;
+    text-align: right;
+}
+
+.hi {
+    background-color: rgba(1, 225, 255, 0.301);
+    font-size: 220%;
+    text-align: left;
+    padding: 40px;
+    width: 500px;
+    border: 2px solid black;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main2 {
+    background-color: rgb(61, 61, 61);
+    height: 700px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+
+.main2 h1 {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 250%;
+    padding-top: 7px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.hobby {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: white; */
+}
+
+.hobby :first-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobby :last-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border: 3px solid black;
+}
+
+.eating {
+    background-image: url("icecream.jpg");
+    
+}
+
+.karaoke {
+    background-image: url("sing (2).jpg");
+}
+
+.billiards {
+    background-image: url("billiards.jpg");
+}
+
+.movie {
+    background-image: url("movie.jpg");
+}
+
+.small-square {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-square {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.main3 {
+    background-image: url("mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 800px;
+    }
+
+.opacity {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dream {
+    opacity: 1;
+    width: 350px;
+    text-align: left;
+    background-color: black;    
+    font-size: 250%;
+    font-weight: 100;
+    padding: 15px 50px 5px 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.large-box {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(94, 93, 93);
+    margin: 0 25px;
+    border: 2px solid black;
+}
+
+.box p{
+    color: black;
+    font-size: 200%;
+    margin-top: 50px;
+}
+
+.box img {
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+.main4 {
+    background-color: rgb(145, 145, 145);    
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.main4 h1 {
+    font-size: 300%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input p {
+    margin: 20px;
+    font-size: 150%;
+    padding-top: 10px;
+}
+
+.name, .email {
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.message {
+    padding-top: 5px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    background-color: skyblue;
+    border: 1px solid black;
+    font-size: 200%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* footer begins */
+footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
