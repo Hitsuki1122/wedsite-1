@@ -52,7 +52,11 @@ header div {
     background-color: black;
 }
 
-
+@media screen and (max-width: 780px) {
+    .header-left p {
+        font-size: 300%;
+    }   
+}
 
 
 
@@ -101,6 +105,26 @@ header div {
     }
 }
 
+@media screen and (max-width: 780px) {
+    .main1 div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .greeting {
+        text-align: center;
+    }
+    
+    .hi {
+        text-align: center;
+        margin: 0 auto;
+    }
+} 
+
+
+/* hobby section */
+
 .main2 {
     background-color: rgb(61, 61, 61);
     height: 700px;
@@ -127,7 +151,6 @@ header div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: white; */
 }
 
 .hobby :first-child {
@@ -178,6 +201,8 @@ header div {
     font-size: 200%;
     font-weight: bold;
 }
+
+/* dream section */
 
 .main3 {
     background-image: url("mountain.jpg");
@@ -230,6 +255,13 @@ header div {
     margin-top: 50px;
     border: 2px solid black;
 }
+
+@media screen and (max-width: 1280px) {
+    .large-box {
+        justify-content: space-around;
+    }
+}
+/* message section */
 
 .main4 {
     background-color: rgb(145, 145, 145);    
@@ -286,6 +318,38 @@ header div {
     font-size: 200%;
     font-weight: bold;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 780px) {
+    .input {
+        flex-direction: column;
+    }
+    
+    .input p {
+        margin: 10px 0 10px 150px;
+        padding-top: 0;
+        text-align: left;
+    }
+    
+    .name, .email {
+        margin: 0 auto;
+    }
+    
+    .message {
+        padding-top: 0;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    
+    .submit {
+        width: 200px;
+        height: 50px;
+        background-color: skyblue;
+        border: 1px solid black;
+        font-size: 200%;
+        font-weight: bold;
+        border-radius: 5px;
+    }
 }
 
 /* footer begins */
